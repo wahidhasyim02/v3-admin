@@ -44,7 +44,7 @@
 </head>
 
 <body
-  class="h-screen w-full min-h-screen  flex flex-col bg-white bg-cover bg-no-repeat font-noto text-gray-600 transition-colors duration-1000 dark:bg-black dark:text-gray-400">
+  class="h-screen w-full min-h-screen max-h-screen  flex flex-col bg-white bg-cover bg-no-repeat font-noto text-gray-600 transition-colors duration-1000 dark:bg-black dark:text-gray-400">
 
 
   <header class="w-full flex-none h-12 px-4 bg-white border-b border-gray-300">
@@ -71,89 +71,89 @@
 </div>
   </header>
 
-  <main class="grow flex">
+  <main class="grow flex bg-blue-50">
     <nav class="bg-white border-r border-gray-300 h-full w-fit flex flex-col items-center justify-center py-12">
 
     <ul class="flex flex-col ">
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/menu" title="Menu">
-                <img src="/images/menu/menu.png" alt="Menu-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/menu.png" alt="Menu-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
 
         </li>
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/home" title="Home">
-                <img src="/images/menu/home.png" alt="Home-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/home.png" alt="Home-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
 
         </li>
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/dashboard" title="Dashboard">
-                <img src="/images/menu/dashboard.png" alt="Dashboard-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/dashboard.png" alt="Dashboard-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
 
         </li>
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/groups" title="Groups">
-                <img src="/images/menu/groups.png" alt="Groups-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/groups.png" alt="Groups-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
 
         </li>
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/documentation" title="Documentation">
-                <img src="/images/menu/documentation_manual_book.png" alt="Documentation-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/documentation_manual_book.png" alt="Documentation-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
 
         </li>
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/notification" title="Notification">
-                <img src="/images/menu/notification.png" alt="Notification-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/notification.png" alt="Notification-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
 
         </li>
         
-        <li class="group flex items-center justify-center p-4 ">
-            <a href="/user_account" title="User Account">
-                <img src="/images/menu/user_account_default.png" alt="User Account-icon" class="h-6 object-cover">
+        
+        <li class="group flex items-center justify-center p-4 cursor-pointer">
+            <img src="/images/menu/user_account_default.png" alt="User Account-icon" class="h-6 object-cover">
 
 
-            </a>
+
             <div
                 class="absolute h-6 w-[3px] rounded-sm bg-blue-500/0 group-hover:bg-blue-500 right-0 transition-colors ease-out duration-1000">
             </div>
@@ -164,7 +164,7 @@
 
 </nav>
 
-    <div class="grow h-full w-full p-4 ">
+    <div class="grow h-full w-full p-2 ">
       
 <div class="hidden">
   <p>Laborum voluptate pariatur ex culpa magna nostrud est incididunt fugiat
@@ -187,8 +187,9 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
 
 
 
-<div class="relative  h-fit  overflow-x-auto shadow-md sm:rounded-lg">
-  <table class="w-full relative  h-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+<div class="relative    overflow-x-auto shadow-md sm:rounded-lg ">
+  <table
+    class="w-full relative  max-h-[calc(100vh-134px)] text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
     <thead class="text-xs h-12  text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
       <tr>
         <th scope="col" class="p-4">
@@ -215,9 +216,9 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </th>
       </tr>
     </thead>
-    <tbody class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800">
+    <tbody class="max-h-[calc(100vh-134px)] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800">
       <tr
-        class="h-fit hidden odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-1" type="checkbox"
@@ -242,7 +243,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-2" type="checkbox"
@@ -267,7 +268,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -292,7 +293,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -317,7 +318,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -342,7 +343,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -367,7 +368,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -392,7 +393,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -417,7 +418,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
         </td>
       </tr>
       <tr
-        class="h-fit odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+        class="max-h-[50px] odd:bg-gray-100 dark:odd:bg-gray-900 even:bg-white dark:even:bg-gray-800 border-b  dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
         <td class="w-4 p-4">
           <div class="flex items-center">
             <input id="checkbox-table-search-3" type="checkbox"
@@ -444,7 +445,7 @@ excepteur excepteur pariatur nostrud qui irure ullamco.</p>
 
     </tbody>
   </table>
-  <nav class="flex  items-center bg-white dark:bg-gray-800 flex-column flex-wrap md:flex-row justify-between p-4"
+  <nav class="flex  items-center bg-white dark:bg-gray-800 flex-column flex-wrap md:flex-row justify-between px-4 py-2"
     aria-label="Table navigation">
     <span
       class="text-sm font-normal text-gray-900 dark:text-white mb-4 md:mb-0 block w-full md:inline md:w-auto">Showing
