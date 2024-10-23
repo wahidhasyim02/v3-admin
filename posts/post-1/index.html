@@ -43,9 +43,11 @@
 </head>
 
 <body
-  class="max-h-screen w-full  bg-white bg-cover bg-no-repeat font-noto text-gray-600 transition-colors duration-1000 dark:bg-black dark:text-gray-400">
+  class="h-screen w-full min-h-screen flex flex-col bg-white bg-cover bg-no-repeat font-noto text-gray-600 transition-colors duration-1000 dark:bg-black dark:text-gray-400">
 
-  <header class="w-full h-12 px-4 bg-white border-b border-gray-300">
+
+  <header class="w-full flex-none h-12 px-4 bg-white border-b border-gray-300">
+
     <div class="flex items-center justify-between h-full">
     <div class="h-6 flex gap-2"><img src="/images/favicon.png" alt="apps-icon">
         <h1>Admin V3</h1>
@@ -67,9 +69,10 @@
 </nav>
 </div>
   </header>
-  <main class="h-[calc(100vh-3rem)] flex  relative">
-    <nav
-    class="bg-white border-r border-gray-300 relative left-0 top-0 flex  h-full w-fit flex-col items-center justify-center py-12">
+
+  <main class="grow flex">
+    <nav class="bg-white border-r border-gray-300 h-full w-fit flex flex-col items-center justify-center py-12">
+
     <ul class="flex flex-col ">
         
         <li class="group flex items-center justify-center p-4 ">
@@ -159,7 +162,8 @@
     </ul>
 
 </nav>
-    <div class="relative w-[calc(100%-56px)] p-4">
+
+    <div class="grow h-full w-full p-4 ">
       
   <h1>Post 1</h1>
 
@@ -181,9 +185,7 @@
 
     </div>
   </main>
-  <footer class="fixed hidden bottom-0 w-full left-0">
-    <p class="bg-white text-center">Copyright 2024. All rights reserved.</p>
-  </footer>
+
 </body>
 
 </html>
